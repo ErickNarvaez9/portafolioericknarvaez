@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;   
+}
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh; /*altura pantalla*/
+    padding: 2em; /* espacio entre todos los texto y el siguiente */
+    background-color: green;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.brand {
+    margin-top: -7px;
+    color: rgb(240, 240, 18);
+
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content:space-around;
+}
+
+.menu .menucolor1  {
+    color:red;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    /* da color al poner el mouse*/
+    background-color:aqua;
+    color:brown;
+    transition: ease-in .4s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw; /* se separa del border nuesta  presentacion*/
+    height: 80vh;
+    display: grid; /* para poner mi parrafo y el imagen al lado*/
+    grid-template-columns: repeat(2,1fr);
+    align-items: center; /* para bajar y centar el parrafo y la imagen*/  
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.span {
+    color:aqua;
+}
+
+.Hire-me { /* modificar mi boton download*/
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px; /*se despego del texto de arriba*/
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .70);
+}
+
+.Hire-me:hover {
+     background-color:blueviolet; 
+     box-shadow: none;    
+}
+
+.main img {
+    width: 350px;
+    height: 350px;
+    border: 7px solid black;
+}
+
+
+
+.about {
+   display:grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 100vw;
+    align-items: center; /*se centra la imagen,no el border*/
+}
+
+.about img {
+    width: 350px;
+    grid-column: 1/5;
+
+}
+
+.about-informacion{
+    grid column: 5/10;
+    padding: 3em; /*separa la fotos del texto*/
+}
+
+.about-informacion h2 {
+   font-size: 2em;
+   background-color: aliceblue; /*color del wrapper*/
+}
+
+.divider { /*linea de abajod e cada titulo*/
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
+
+}
+
+.about p {
+    margin-bottom: 1em;
+}
+
+/*------------------*/
+
+.portfolio {
+    /*es el fondo de la caja y el titulo portfolio*/
+     width: 100vw;
+     height: 150vh;
+     background-color: green;
+     color: white;
+}
+
+
+.portfolio-headings {
+    width: 100vw;
+    padding: 3em;
+}
+
+.portfolio-headings h2 {
+    font-size: 2.5em;
+}
+
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*-------------------*/
+.card {
+    width: 300px;
+    height:  480px;
+    color: white;
+    background-color: rgb(216, 65, 171);
+    margin: 1em;
+}
+
+.card_imagen {
+    width: 100%;
+    height: 250px;
+    background-image: url(./computadora1.png);
+    background-size: cover;
+}
+
+
+.card_imagen1 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./appdesign.jpg);
+    background-size: cover;
+}
+
+
+.card_imagen2 {
+    width: 100%;
+    height: 250px;
+    background-image: url(./basededatos.jpg);
+    background-size: cover;
+}
+
+
+
+.card_titulo {
+    padding: 20px;
+}
+
+.card_project-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card_project-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.card_project-links i {
+    font-size: 1.5em; 
+}
+
+.card .project-details { /* son los stickers*/
+    margin: 0 auto;
+    margin: 1em;  
+    width: 80%;  
+    
+}
+
+.card .project-details a{ /*modificar letras de project details*/
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+}
+
+.project-details-contents {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.project-details-button a {
+    padding: 3em;
+    margin: 0 auto;
+}
+
+
+
+
+.contact-headings h2 {
+   font-size: 3em;
+}
+
+.container-contact {
+   padding: 3em;
+   margin: 0 auto;    
+}
+
+.container-contact img {
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.formulario input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background:none;
+    border: none;
+    border border-bottom: 1px solid whitesmoke;
+    color: black;
+}
+
+
+.formulario textarea {
+    height: 150px;
+    background: none;
+    color: black;
+    padding: 1.5em;
+    border: 1px solid blue;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .70);
+
+}
+
+.btn-submit:hover {
+    background-color: yellow;
+    box-shadow: none;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color:aqua;
+}
+
+.footer-content h2 {
+    font-size: 3em;    
+}
+
+.footer-content h5 {
+    font-size: 1.5em;    
+}
+
+.social-network {
+    display:flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.social-network i{
+    font-size: 1.5em;  
+}
